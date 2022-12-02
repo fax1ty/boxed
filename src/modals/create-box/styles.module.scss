@@ -1,0 +1,32 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 12px;
+
+  > button {
+    user-select: none;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    border: solid 1px #eee;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding-inline: 12px;
+    padding-block: 6px;
+
+    &:hover {
+      background-color: #eee;
+    }
+
+    &:not(:first-child) {
+      margin-left: 12px;
+    }
+
+    > svg {
+      width: 16px;
+      height: auto;
+      margin-left: 6px;
+    }
+  }
+}
